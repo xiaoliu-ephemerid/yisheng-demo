@@ -522,18 +522,28 @@ ul.brand-list li {
   padding-left: 10px;
 }
 
+.tabbox .img-item .tab-info .info-title a{
+  font-size: 20px;
+}
+
 .tabbox .img-item .tab-info .info-title span a {
   color: #fff;
   text-decoration: none;
 }
 .tabbox .img-item .tab-info .info-price {
-  font-size: 20px;
+  font-size: 18px;
   color: #fff;
   height: 35px;
   padding-left: 10px;
   display: block;
   line-height: 24px;
   margin: 10px auto 0;
+}
+
+.tabbox .img-item .tab-info .info-price a{
+  font-size: 18px;
+  color: #fff;
+  line-height: 24px;
 }
 
 .tabbox .img-item .tab-info .info-info {
