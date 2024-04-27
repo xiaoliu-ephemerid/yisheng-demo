@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+  <title>亿胜科技</title>
+  <link rel="icon" href="./img/logo-2.jpg">
+
+  <link rel="stylesheet" type="text/css" href="./css/all.css" />
+  <link rel="stylesheet" type="text/css" href="./css/index.css" />
+
+</head>
+
+<body>
+  <!-- 头部栏位 -->
+  <!--页面顶部-->
+  <div id="nav-bottom">
+    <!--顶部-->
+    <div class="nav-top">
+      <div class="top">
+        <div class="py-container">
+          <div class="shortcut">
+            <input type="radio" id="language" name="language" value="chinese_simplified" checked/>
+            <label for="chinese_simplified">中文</label>
+            <input type="radio" id="language" name="language" value="english" />
+            <label for="english">英文</label>
+            <div class="fr typelist" style="text-align: right; padding-right: 10px;">
+              <label for="currency">币种：</label>
+              <select id="currency" name="currency">
+                <option value="rmb">人民币</option>
+                <option value="dollar">美元</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--头部-->
+      <div class="header">
+        <div class="py-container">
+          <div class="yui3-g Logo">
+            <div class="yui3-u logoArea" style="text-align: left; display: flex;overflow: hidden;">
+              <!-- <a class="logo-bd" title="亿胜科技" href="index.html" target="_blank"></a> -->
+              <img style="width: 120px;" src="./img/logo-2.jpg">
+              <h1 style="padding: 25px; font-size: 40px;">亿胜科技</h2>
+            </div>
+            <div class="yui3-u searchArea" style="width: 340px;padding-right: 10px;">
+              <div class="search" style="text-align: right;">
+                <form action="" class="sui-form form-inline">
+                  <!--searchAutoComplete-->
+                  <div class="input-append">
+                    <input type="text" id="autocomplete" class="input-error input-xxlarge" style="width: 200px;" />
+                    <button class="sui-btn btn-xlarge btn-danger" type="button"><a href="#">搜索</a></button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="yui3-u loginArea" style="width: 190px; padding-left: 10px;padding-right: 5px; text-align: right;">
+              <div class="login">
+                <button class="sui-btn btn-xlarge btn-danger" type="button"><a href="#">登录</a></button>
+                <button class="sui-btn btn-xlarge btn-danger" type="button"><a href="#">注册</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 商品分类导航 -->
+  <div class="typeNav">
+    <div class="py-container">
+      <div class="yui3-g NavList">
+        <div class="yui3-u navArea siteGuide ">
+          <a class="guideA" style="background-color: #7cc815; padding: auto 10px;" href="#" target="_blank">首页</a>
+          <a class="guideA" style="background-color: #7cc815; padding: auto 10px;" href="#" target="_blank">在售车辆</a>
+          <a class="guideA" style="background-color: #7cc815; padding: auto 10px;" href="#" target="_blank">车型库</a>
+          <a class="guideA" style="background-color: #7cc815; padding: auto 10px;" href="#" target="_blank">关于我们</a>
+        </div>
+        <!-- <div class="yui3-u Right"></div> -->
+      </div>
+    </div>
+  </div>
+
+  <!--列表-->
+  <div class="py-container">
+    <div class="yui3-g SortList">
+      <div class="yui3-u banerArea">
+        <!--banner轮播-->
+        <div id="myCarousel" data-ride="carousel" data-interval="4000" class="sui-carousel slide">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <!-- <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li> -->
+          </ol>
+          <div class="carousel-inner">
+            <div class="active item">
+              <a href="#" style="text-align: center;">
+                <img style="object-fit: contain;" src="./img/banner-1.jpg" />
+              </a>
+            </div>
+            <!-- <div class="item">
+              <a href="#/">
+                <img src="./img/banner2.jpg" />
+              </a>
+            </div>
+            <div class="item">
+              <a href="#">
+                <img src="./img/banner3.jpg" />
+              </a>
+            </div> -->
+          </div>
+          <a href="#myCarousel" data-slide="prev" class="carousel-control left">‹</a>
+          <a href="#myCarousel" data-slide="next" class="carousel-control right">›</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 热销车型 -->
+  <div class="py-container tabbox">
+    <div class="py-container tab" style="margin-left: 0;">
+      <div class="tab-tit" style="text-align:left">
+        <a href="javascript:;" class="on">
+          <p class="img">
+            <i></i>
+          </p>
+          <p class="text">热销车型</p>
+        </a>
+      </div>
+    </div>
+    <div class="content">
+      <ul>
+        <li style="display:block;">
+          <div class="img-item">
+            <p class="tab-pic">
+              <span>
+                <a href="#">
+                  <img src="./img/2.热销车型/五菱宏光-S3，燃油，4-5万.jpeg" />
+                </a>
+              </span>
+            </p>
+            <div class="tab-info">
+              <div class="info-title">
+                <p>
+                  <span>
+                    <a href="#" style="font-size: 16px;">五菱宏光-S3</a>
+                  </span>
+                </p>
+              </div>
+              <p class="info-info">
+                燃油
+              </p>
+              <p class="info-price">$6,000~$7,000</p>
+            </div>
+          </div>
+          <div class="img-item">
+            <p class="tab-pic">
+              <span>
+                <a href="#">
+                  <img src="./img/2.热销车型/五菱宏光，燃油，5万.jpg" />
+                </a>
+              </span>
+            </p>
+            <div class="tab-info">
+              <div class="info-title">
+                <span>
+                  <a href="#" style="font-size: 16px;">五菱宏光</a>
+                </span>
+              </div>
+              <p class="info-info">
+                燃油
+              </p>
+              <p class="info-price">$7,000</p>
+            </div>
+          </div>
+          <div class="img-item">
+            <p class="tab-pic">
+              <span>
+                <a href="#">
+                  <img src="./img/2.热销车型/吉利-银河L7，混动，12万.jpeg" />
+                </a>
+              </span>
+            </p>
+            <div class="tab-info">
+              <div class="info-title">
+                <span>
+                  <a href="#" style="font-size: 16px;">吉利-银河L7</a>
+                </span>
+              </div>
+              <p class="info-info">
+                混动
+              </p>
+              <p class="info-price">$17,000</p>
+            </div>
+          </div>
+          <div class="img-item">
+            <p class="tab-pic">
+              <span>
+                <a href="#">
+                  <img src="./img/2.热销车型/哪吒汽车-N01,纯电，7万.jpeg" />
+                </a>
+              </span>
+            </p>
+            <div class="tab-info">
+              <div class="info-title">
+                <span>
+                  <a href="#" style="font-size: 16px;">哪吒汽车-N01</a>
+                </span>
+              </div>
+              <p class="info-info">
+                纯电
+              </p>
+              <p class="info-price">$10,000</p>
+            </div>
+          </div>
+
+          <div class="img-item">
+            <p class="tab-pic">
+              <span>
+                <a href="#">
+                  <img src="./img/2.热销车型/奇瑞瑞虎3X,燃油，5万.jpg" />
+                </a>
+              </span>
+            </p>
+            <div class="tab-info">
+              <div class="info-title">
+                <span>
+                  <a href="#" style="font-size: 16px;">奇瑞瑞虎3X</a>
+                </span>
+              </div>
+              <p class="info-info">
+                燃油
+              </p>
+              <p class="info-price">$7,000</p>
+            </div>
+          </div>
+
+          <div class="img-item">
+            <p class="tab-pic">
+              <span>
+                <a href="#">
+                  <img src="./img/2.热销车型/广汽-AION Y，纯电，9万.jpeg" />
+                </a>
+              </span>
+            </p>
+            <div class="tab-info">
+              <div class="info-title">
+                <span>
+                  <a href="#" style="font-size: 16px;">广汽-AION Y</a>
+                </span>
+              </div>
+              <p class="info-info">
+                纯电
+              </p>
+              <p class="info-price">$12,000</p>
+            </div>
+          </div>
+
+          <div class="img-item">
+            <p class="tab-pic">
+              <span>
+                <a href="#">
+                  <img src="./img/2.热销车型/长城-风骏5，燃油，5万.jpg" />
+                </a>
+              </span>
+            </p>
+            <div class="tab-info">
+              <div class="info-title">
+                <span>
+                  <a href="#" style="font-size: 16px;">长城-风骏5</a>
+                </span>
+              </div>
+              <p class="info-info">
+                燃油
+              </p>
+              <p class="info-price">$7,000</p>
+            </div>
+          </div>
+
+          <div class="img-item">
+            <p class="tab-pic">
+              <span>
+                <a href="#">
+                  <img src="./img/2.热销车型/长安汽车-奔奔，燃油，3-4万.jpg" />
+                </a>
+              </span>
+            </p>
+            <div class="tab-info">
+              <div class="info-title">
+                <span>
+                  <a href="#" style="font-size: 16px;">长安汽车-奔奔</a>
+                </span>
+              </div>
+              <p class="info-info">
+                燃油
+              </p>
+              <p class="info-price">$4,000~$6,000</p>
+            </div>
+          </div>
+
+          <div class="img-item">
+            <p class="tab-pic">
+              <span>
+                <a href="#">
+                  <img src="./img/2.热销车型/零跑汽车-T03，纯电，5万.jpeg" />
+                </a>
+              </span>
+            </p>
+            <div class="tab-info">
+              <div class="info-title">
+                <span>
+                  <a href="#" style="font-size: 16px;">零跑汽车-T03</a>
+                </span>
+              </div>
+              <p class="info-info">
+                纯电
+              </p>
+              <p class="info-price">$7,000</p>
+            </div>
+          </div>
+
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ####################### -->
+
+  <div class="py-container" style="height: 50px;">
+  </div>
+
+  <div class="py-container tabbox introduction">
+    <!-- <div class="py-container" style="width: 400px; padding: 10px;">
+      <img style="object-fit: contain;" src="./img/banner1.jpg" />
+    </div> -->
+    <div class="py-container tab" style="margin-left: 0; width: 100%; display: flex; flex-direction: column;">
+      <div class="tab-tit" style="text-align:left; width: 100%; padding: 10px;">
+        <p class="text" style="color: #7cc815; font-size: 26px;">公司简介</p>
+      </div>
+      <div class="content" style="width: 100%;">
+        <span style="font-size: 18px; line-height: 25px">
+          <p>&emsp;&emsp;亿胜科技成立于2016年，注册资金1000万人民币，是一家以汽车出口为主营业务，多元化发展的公司。
+            公司在中国与多家汽车主机厂、经销商、二手车平台有多年深入合作，有大量汽车行业资源，可以为海外
+            客户提供各类新能源汽车、燃油车、二手车，也可根据客户的需求生产定制的新能源车。</p>
+          <p>
+            &emsp;&emsp;公司拥有大量专注于汽车行业的高素质人才，大学学历人员占比100%、其中有高级技术职称的人员占80%，
+            是一支自律自强、勇于拼搏的专业队伍。
+          </p>
+          <p>
+            &emsp;&emsp;我们始终秉持互惠互利、务实开放的合作理念，与海内外广大客户共商发展大计，共同开辟海外汽车市场，
+            实现互利共赢。</p>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="py-container" style="height: 50px;">
+  </div>
+
+  <div class="py-container tabbox">
+    <div class="py-container tab" style="margin-left: 0;">
+      <div class="tab-tit" style="text-align:left; width: 800px; height: 20%; padding: 10px;">
+        <p class="text" style="color: #7cc815; font-size: 26px;">业务范围</p>
+      </div>
+    </div>
+    <div class="content">
+      <p class="tab-pic">
+        <img src="./img/深圳全球辐射图.jpg" />
+      </p>
+    </div>
+  </div>
+
+  <div class="py-container" style="height: 50px;">
+  </div>
+
+  <div class="py-container tabbox">
+    <div class="py-container tab" style="margin-left: 0;">
+      <div class="py-container tab" style="margin-left: 0;">
+        <div class="tab-tit" style="text-align:left; width: 800px; height: 20%; padding: 10px;">
+          <p class="text" style="color: #7cc815; font-size: 26px;">合作伙伴</p>
+        </div>
+      </div>
+    </div>
+    <div class="content pattern-logo">
+      <img src="./img/5.合作伙伴-图片lg/BYD-lg.jpg" />
+      <img src="./img/5.合作伙伴-图片lg/吉利lg.png" />
+      <img src="./img/5.合作伙伴-图片lg/哪吒汽车lg.png" />
+      <img src="./img/5.合作伙伴-图片lg/奇瑞lg.jpeg" />
+      <img src="./img/5.合作伙伴-图片lg/广汽-lg.png" />
+      <img src="./img/5.合作伙伴-图片lg/长城LG.webp" />
+      <img src="./img/5.合作伙伴-图片lg/长安lg.jpg" />
+      <img src="./img/5.合作伙伴-图片lg/长安商用lg.jpg" />
+    </div>
+  </div>
+
+  <div class="py-container" style="height: 50px;">
+  </div>
+  <div style="background-color: gray; height: 200px;">
+    <div class="py-container tabbox">
+      <div class="py-container tab" style="margin-left: 0;">
+        <div class="py-container tab" style="margin-left: 0;">
+          <div class="tab-tit" style="text-align:left; width: 800px; height: 20%; padding: 10px;">
+            <p class="text" style="color: #7cc815; font-size: 26px;">联系我们</p>
+          </div>
+        </div>
+      </div>
+      <div style="padding: 10px;">
+        <ul style="list-style: none; margin: 10px; margin: 0;font-size: 16px;line-height: 25px;letter-spacing: 1px;">
+          <li>邮箱: 15099929609@163.com</li>
+          <li>微信: 15099929609</li>
+          <li>联系地址：中国 深圳市南山区恒大天璟B栋14楼</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="./js/all.js"></script>
+  <script type="text/javascript" src="./js/plugins/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/pages/index.js"></script>
+  <script type="text/javascript" src="./js/plugins/translate.js"></script>
+  <script>
+    
+    const currencyMap = new Map()
+    currencyMap.set("chinese_simplified","rmb")
+    currencyMap.set("english", "dollar")
+
+    $(":radio").click(function () {
+      // 修改语言
+      translate.changeLanguage($(this).val());
+
+      var cur = currencyMap.get($(this).val())
+      // 修改币种
+      $("#currency option[value="+cur+"]").attr("selected", "true")
+      
+      // 删除框架自动添加语言栏
+      $("#translate").remove()
+      
+    })
+
+  </script>
+</body>
+
+</html>
