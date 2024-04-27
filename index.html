@@ -455,15 +455,13 @@
     currencyMap.set("english", "dollar")
 
     translate.language.setDefaultTo('english')
-    // translate.selectLanguageTag.show = false
+    translate.selectLanguageTag.show = false
     translate.execute()
 
     translate.listener.renderTaskFinish = function (task) {
-      console.log("执行一次")
-      // translate.changeLanguage('english')
+      // console.log("执行一次")
       var cur = currencyMap.get('english')
       $("#currency option[value=dollar]").attr("selected", "true")
-      // $("#currency option[value=dollar]").addAtrr("selected")
       $("#language[value=english]").attr("checked", "true")
 
     }
@@ -477,8 +475,8 @@
       // 修改币种
       $("#currency option[value=" + cur + "]").attr("selected", "true")
 
-      // 删除框架自动添加语言栏
-      $("#translate").hide
+      // // 删除框架自动添加语言栏
+      // $("#translate").hide
 
     })
 
