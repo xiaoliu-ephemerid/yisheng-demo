@@ -21,9 +21,9 @@
       <div class="top">
         <div class="py-container">
           <div class="shortcut">
-            <input type="radio" id="language" name="language" value="chinese_simplified" checked/>
+            <input type="radio" id="language" name="language" value="chinese_simplified" checked />
             <label for="chinese_simplified">中文</label>
-            <input type="radio" id="language" name="language" value="english"/>
+            <input type="radio" id="language" name="language" value="english" />
             <label for="english">英文</label>
             <div class="fr typelist" style="text-align: right; padding-right: 10px;">
               <label for="currency">币种：</label>
@@ -56,7 +56,8 @@
                 </form>
               </div>
             </div>
-            <div class="yui3-u loginArea" style="width: 190px; padding-left: 10px;padding-right: 5px; text-align: right;">
+            <div class="yui3-u loginArea"
+              style="width: 190px; padding-left: 10px;padding-right: 5px; text-align: right;">
               <div class="login">
                 <button class="sui-btn btn-xlarge btn-danger" type="button"><a href="#">登录</a></button>
                 <button class="sui-btn btn-xlarge btn-danger" type="button"><a href="#">注册</a></button>
@@ -167,9 +168,9 @@
             <div class="tab-info">
               <div class="info-title">
                 <p>
-                <span>
-                  <a href="#" >五菱宏光</a>
-                </span>
+                  <span>
+                    <a href="#">五菱宏光</a>
+                  </span>
                 </p>
               </div>
               <p class="info-info">
@@ -190,9 +191,9 @@
             <div class="tab-info">
               <div class="info-title">
                 <p>
-                <span>
-                  <a href="#" >吉利-银河L7</a>
-                </span>
+                  <span>
+                    <a href="#">吉利-银河L7</a>
+                  </span>
                 </p>
               </div>
               <p class="info-info">
@@ -213,10 +214,10 @@
             <div class="tab-info">
               <div class="info-title">
                 <p>
-                  
-                <span>
-                  <a href="#" >哪吒汽车-N01</a>
-                </span>
+
+                  <span>
+                    <a href="#">哪吒汽车-N01</a>
+                  </span>
                 </p>
               </div>
               <p class="info-info">
@@ -238,9 +239,9 @@
             <div class="tab-info">
               <div class="info-title">
                 <p>
-                <span>
-                  <a href="#">奇瑞瑞虎3X</a>
-                </span>
+                  <span>
+                    <a href="#">奇瑞瑞虎3X</a>
+                  </span>
                 </p>
               </div>
               <p class="info-info">
@@ -262,9 +263,9 @@
             <div class="tab-info">
               <div class="info-title">
                 <p>
-                <span>
-                  <a href="#">广汽-AION Y</a>
-                </span>
+                  <span>
+                    <a href="#">广汽-AION Y</a>
+                  </span>
                 </p>
               </div>
               <p class="info-info">
@@ -286,9 +287,9 @@
             <div class="tab-info">
               <div class="info-title">
                 <p>
-                <span>
-                  <a href="#">长城-风骏5</a>
-                </span>
+                  <span>
+                    <a href="#">长城-风骏5</a>
+                  </span>
                 </p>
               </div>
               <p class="info-info">
@@ -309,10 +310,10 @@
             </p>
             <div class="tab-info">
               <div class="info-title">
-                <p>  
-                <span>
-                  <a href="#">长安汽车-奔奔</a>
-                </span>
+                <p>
+                  <span>
+                    <a href="#">长安汽车-奔奔</a>
+                  </span>
                 </p>
               </div>
               <p class="info-info">
@@ -334,9 +335,9 @@
             <div class="tab-info">
               <div class="info-title">
                 <p>
-                <span>
-                  <a href="#">零跑汽车-T03</a>
-                </span>
+                  <span>
+                    <a href="#">零跑汽车-T03</a>
+                  </span>
                 </p>
               </div>
               <p class="info-info">
@@ -448,23 +449,23 @@
   <script type="text/javascript" src="./js/pages/index.js"></script>
   <script type="text/javascript" src="./js/plugins/translate.js"></script>
   <script>
-    
+
     const currencyMap = new Map()
-    currencyMap.set("chinese_simplified","rmb")
+    currencyMap.set("chinese_simplified", "rmb")
     currencyMap.set("english", "dollar")
 
     translate.language.setDefaultTo('english')
     // translate.selectLanguageTag.show = false
     translate.execute()
 
-    translate.listener.renderTaskFinish = function(task) {
+    translate.listener.renderTaskFinish = function (task) {
       console.log("执行一次")
       // translate.changeLanguage('english')
       var cur = currencyMap.get('english')
       $("#currency option[value=dollar]").attr("selected", "true")
       // $("#currency option[value=dollar]").addAtrr("selected")
       $("#language[value=english]").attr("checked", "true")
-      
+
     }
 
 
@@ -474,11 +475,11 @@
 
       var cur = currencyMap.get($(this).val())
       // 修改币种
-      $("#currency option[value="+cur+"]").attr("selected", "true")
-      
+      $("#currency option[value=" + cur + "]").attr("selected", "true")
+
       // 删除框架自动添加语言栏
       $("#translate").hide
-      
+
     })
 
   </script>
