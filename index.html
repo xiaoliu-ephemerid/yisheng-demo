@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+  <meta id="viewport" name="viewport" content="width=1200px;"/>
   <title>亿胜科技</title>
   <link rel="icon" href="./img/logo-2.jpg">
 
@@ -20,11 +21,14 @@
     <div class="nav-top">
       <div class="top">
         <div class="py-container">
-          <div class="shortcut">
+          <div class="shortcut" style=" display:flex; justify-content: space-between;" >
+            <div style="padding-left: 5px;width: 200px;">
             <input type="radio" id="language" name="language" value="chinese_simplified" checked />
             <label for="chinese_simplified">中文</label>
             <input type="radio" id="language" name="language" value="english" />
             <label for="english">英文</label>
+            </div>
+
             <div class="fr typelist" style="text-align: right; padding-right: 10px;">
               <label for="currency">币种：</label>
               <select id="currency" name="currency">
@@ -424,7 +428,7 @@
 
   <div class="py-container" style="height: 50px;">
   </div>
-  <div style="background-color: gray; height: 200px;">
+  <div style="background-color: #bdbdbd; height: 200px;">
     <div class="py-container tabbox">
       <div class="py-container tab" style="margin-left: 0;">
         <div class="py-container tab" style="margin-left: 0;">
